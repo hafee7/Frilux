@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Attached Boostrap -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- attaced css -->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- attach the JS files -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!--Linked Google Font-->
+
+    <title>Frilux: Contact Us</title>
+
+    <style media="screen">
+
+    body{
+        background-image:linear-gradient(to bottom, #4f4f48, #bbbe8e);
+    }
+
+    #container{
+      margin-top: 60px;
+      padding:  20px 80px 10px 80px;
+      background-color:#fff;
+      float: left;
+      box-shadow: 0px 5px 15px #969696;
+      height: 580px;
+      border-radius: 1%;
+    }
+
+    #container label{
+      display: block;
+      margin: 18px 0px 5px 10px;
+    }
+
+    #container input{
+      display: block;
+      border: 1px solid #ced4da;
+      background-color: #ededed;
+      border-radius: 4px;
+      width: 100%;
+      height: 34px;
+      padding-left: 10px;
+    }
+
+    #container textarea{
+      display: block;
+      border: 1px solid #ced4da;
+      background-color: #ededed;
+      border-radius: 4px;
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    #container .send{
+        width: 100%;
+        height: 40px;
+        border:none;
+        box-shadow: 0px 2px 4px 0px #7c7c7c;
+        border-radius: 2%;
+        font-weight: 600;
+        color: #fff;
+        background-color: #002029;
+        margin: 30px 0px 0px 0px;
+        font-size: 15px;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+
+      #container input:focus{
+        outline: none;
+        border: 0px solid;
+        box-shadow: 0px 0px 3.5px 0px #585858;
+      }
+
+      #container textarea:focus{
+        outline: none;
+        border: 0px solid;
+        box-shadow: 0px 0px 3.5px 0px #585858;
+      }
+
+      #container .send:focus{
+        outline: none;
+      }
+
+      #container .send:hover{
+        background-color: #1f586b;
+        box-shadow: 0px 0px 5px 0px #585858;
+      }
+
+      .text{
+        margin-top: 65px;
+        float: left;
+        height: 580px;
+      }
+
+      h2{
+        color: #002029;
+        float: right;
+        position: absolute;
+        top: 40px;
+        left:39px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 600;
+      }
+
+      .text img{
+        position: relative;
+        top: 150px;
+        right: 80px;
+      }
+
+      .text img{
+        border-radius: 2.5%;
+      }
+      .container a{
+        color: White !important;
+      }
+
+      #logotext{
+        font-size: 25px;
+        font-style: oblique;
+        font-weight: 900;
+        position: sticky;
+        color: Yellow !important;
+      }
+
+
+    </style>
+  </head>
+  <body style="height:100%">
+
+    <div class="nav_bar col-lg-12 col-md-12 col-sm-12">
+
+      <div class="container">
+
+        <a href="./index.html" id="logotext" > Frilux Sunshade
+          <!-- <img src="./frilux/Logo 3.jpg" alt="logo" id="logo"> -->
+        </a>
+
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="./gallery1.html" >Gallery</a>
+          </li>
+
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="./about_us.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="./sign_up.html">Sign Up</a>
+          </li>
+        </ul>
+
+      </div><!--container div ends here-->
+
+    </div><!--nav_bar div ends here-->
+
+    <div class="container offset-1 col-lg-5 col-md-10 col-sm-10 col-xm-10" id="container">
+
+      <form class=""
+        onsubmit="return validateForm()"about_us
+        action="register.php" method="post">
+
+        <label for="fname" >First Name<span style="color:#ff0000">*</span></label>
+        <input type="text" id="fname" >
+
+        <label for="lname">Last Name</label>
+        <input type="text" >
+
+        <label for="email">Email<span style="color:#ff0000">*</span></label>
+        <input type="email" id="email">
+
+        <label for="message">Message<span style="color:#ff0000">*</span></label>
+        <textarea name="message" rows="6" cols="60" id="message"></textarea>
+
+        <button class="send" type="submit">Send Message</button>
+
+      </form><!-- end of form-->
+
+    </div><!--container ends here-->
+
+    <div class="text offset-1 col-lg-5 col-md-11 col-sm-11 col-xm-11">
+
+      <h2>Contact Us</h2>
+      <img src="./frilux/contact_us.png" alt="contact_us_bg">
+
+    </div><!--text div ends here-->
+
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+    <div class="footer">
+      <div class="container" id="footer">
+        <p>2021 &copy; All Rights Reserved | Designed and Developed by Mohamed Hafeez</p>
+        <a href="#"><img src="./frilux/Social Media/Facebook.jpg" alt="Facebook icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Google+.jpg" alt="Google+ icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Instagram.jpg" alt="Instagram icon"></a>
+
+      </div><!--container div ends here-->
+    </div><!--footer div ends here-->
+
+
+    <script type="text/javascript">
+
+      function validateForm(){
+
+        var fname  = document.getElementById("fname").value;
+        var email  = document.getElementById("email").value;
+        var message  = document.getElementById("message").value;
+
+        if(fname==""){
+          //alert('Name cannot be an empty value');
+          $('#errorDialogfname').modal('show');
+          return false;
+        }
+        else if (email=="") {
+          $('#errorDialogemail').modal('show');
+          return false;
+        }
+        else if (message=="") {
+          $('#errorDialogmessage').modal('show');
+          return false;
+        }
+
+      }//end of validateForm() js function
+
+    </script><!--end of script-->
+
+    <!-- Modal fname -->
+    <div class="modal fade" id="errorDialogfname" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              First name cannot be empty.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal email -->
+    <div class="modal fade" id="errorDialogemail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please provide an email address.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal message -->
+    <div class="modal fade" id="errorDialogmessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Oops.. You forgot to type your message.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+  </body>
+</html>

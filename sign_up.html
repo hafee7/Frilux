@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Attached Boostrap CSS style sheet -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- attaced custom style sheet -->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- attach the JS files -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!--Linked Google Font-->
+
+
+    <title>Frilux: Sign Up</title>
+
+    <style media="screen">
+
+    body{
+      background-image:linear-gradient(to bottom, #495b69, #caced1);
+    }
+
+    #main_con{
+      background-color: lightgreen;
+      padding:30px 50px 20px 50px;
+      position: relative;
+      top: 100px;
+      background-color: #fff;
+      box-shadow: 0px 5px 15px #969696;
+      border-radius: 1%;
+    }
+
+    #main_con label{
+      display: block;
+      margin: -5px 0px 5px 20px;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 15px;
+    }
+
+    #main_con input{
+      display: block;
+      border: 1px solid #ced4da;
+      background-color: #ededed;
+      border-radius: 4px;
+      width: 100%;
+      height: 33px;
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+
+    #main_con .checkbox{
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      display: inline-block;
+      margin-right: 6px;
+      cursor: pointer;
+    }
+
+    #main_con .checkbox:focus{
+      box-shadow: none;
+    }
+
+    #main_con button{
+      width: 100%;
+      height: 40px;
+      border:none;
+      box-shadow: 0px 2px 4px 0px #7c7c7c;
+      border-radius: 2%;
+      font-weight: 600;
+      color: #fff;
+      background-color: #002029;
+      margin: 15px 0px 0px 0px;
+      font-size: 15px;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    #main_con button:hover{
+      background-color: #1f586b;
+      box-shadow: 0px 0px 5px 0px #585858;
+    }
+
+    #main_con button:focus{
+      outline: none;
+    }
+
+    #main_con h2{
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #002029;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    #main_con input:focus{
+      outline: none;
+      border: 0px solid;
+      box-shadow: 0px 0px 3.5px 0px #585858;
+    }
+
+    #main_con p{
+      font-size: 15px;
+    }
+    .container a{
+      color: White !important;
+    }
+
+    #logotext{
+      font-size: 25px;
+      font-style: oblique;
+      font-weight: 900;
+      position: sticky;
+      color: Yellow !important;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="nav_bar col-lg-12 col-md-12 col-sm-12">
+
+      <div class="container">
+
+        <a href="./index.html" id="logotext" > Frilux Sunshade
+          <!-- <img src="./frilux/Logo 3.jpg" alt="logo" id="logo"> -->
+        </a>
+
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="./gallery1.html" >Gallery</a>
+          </li>
+
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="./about_us.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="./sign_up.html">Sign Up</a>
+          </li>
+        </ul>
+
+      </div><!--container div ends here-->
+
+    </div><!--nav_bar div ends here-->
+
+    <div class="container col-lg-5 col-md-8 col-sm-10 " id="main_con">
+
+      <h2>Sign Up</h2>
+
+      <form class=""
+        onsubmit="return validateForm()"
+        action="register.php" method="post">
+
+        <label for="fname">First Name<span style="color:#ff0000">*</span></label>
+        <input type="text" name="" value="" id="fname"></Br>
+
+        <label for="lname">Last Name<span style="color:#ff0000">*</span></label>
+        <input type="text" name="" value="" id="lname"></Br>
+
+        <label for="email">Email Address<span style="color:#ff0000">*</span></label>
+        <input type="text" name="" value="" id="email" required></Br>
+
+        <label for="password">Password<span style="color:#ff0000">*</span></label>
+        <input type="password" name="" value="" id="password"></Br>
+
+        <label for="Confirm_password">Confirm Password<span style="color:#ff0000">*</span></label>
+        <input type="password" name="" value="" id="confirmpassword"></Br>
+
+        <p>
+          <input class="checkbox" type="checkbox" id="checkbox"> I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+        </p>
+
+        <button type="submit" name="button" id="button">Sign Up</button>
+
+      </form><!--form ends here-->
+
+    </div><!--Container ends here-->
+    <pre>
+
+
+
+
+
+
+    </pre>
+
+    <script type="text/javascript">
+
+      function validateForm(){
+
+        var fname  = document.getElementById("fname").value;
+        var lname  = document.getElementById("lname").value;
+        var email  = document.getElementById("email").value;
+        var password  = document.getElementById("password").value;
+        var confirmpassword  = document.getElementById("confirmpassword").value;
+        // var valid = false;
+
+        if(fname==""){
+          //alert('Name cannot be an empty value');
+          $('#errorDialogfname').modal('show');
+          return false;
+        }
+        else if (lname=="") {
+          $('#errorDialoglname').modal('show');
+          return false;
+        }
+        else if (email=="") {
+          $('#errorDialogemail').modal('show');
+          return false;
+        }
+        else if (password=="") {
+          $('#errorDialogpassword').modal('show');
+          return false;
+        }
+
+        else if (password!=confirmpassword) {
+          $('#errorDialogpasswordmismatch').modal('show');
+          return false;
+        }
+
+        if (document.getElementById("checkbox").checked) {
+          var valid = true;
+        }
+
+        else if (valid!=true) {
+          $('#errorDialogagreeT&C').modal('show');
+          return false;
+        }
+        return true;
+
+
+      }//end of validateForm() js function
+
+    </script><!--script ends here-->
+
+    <!-- Modal fname -->
+    <div class="modal fade" id="errorDialogfname" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              First name cannot be empty.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal lname -->
+    <div class="modal fade" id="errorDialoglname" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Last name cannot be empty.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal email -->
+    <div class="modal fade" id="errorDialogemail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please provide an email address.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal password -->
+    <div class="modal fade" id="errorDialogpassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please enter a password.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal password mis-match -->
+    <div class="modal fade" id="errorDialogpasswordmismatch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The password you entered do not match.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+    <!-- Modal agree to terms & conditions -->
+    <div class="modal fade" id="errorDialogagreeT&C" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Invalid Input Detected</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please agree to our terms & conditions to continue.
+            </p >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div><!--modal fade div ends here-->
+
+
+    <div class="footer">
+      <div class="container" id="footer">
+        <p>2021 &copy; All Rights Reserved | Designed and Developed by Mohamed Hafeez</p>
+        <a href="#"><img src="./frilux/Social Media/Facebook.jpg" alt="Facebook icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Google+.jpg" alt="Google+ icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Instagram.jpg" alt="Instagram icon"></a>
+
+      </div><!--container div ends here-->
+    </div><!--footer div ends here-->
+
+  </body>
+</html>
